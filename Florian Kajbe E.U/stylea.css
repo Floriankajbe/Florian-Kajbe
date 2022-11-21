@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(arbeitt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#navigation a:hover {
+color:  rgb(0, 160, 144);
+}
+
+#navigation a {
+color: whitesmoke;
+padding: 8px;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(0, 160, 144);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 160, 144);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: rgb(0, 160, 144);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#socialmedia {
+    padding: 0;
+    margin: auto;
+}
+#footer {
+    color: grey;
+    padding: 16px;
+}
+label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    }
+    
+    label::before{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: black;
+        transition: 0.4s;
+    }
+    
+    label.active::before {
+        left: 24px;
+        background-color: white;
+    }
+    
+    body.night {
+    background-color: black;
+    color: white;
+    }
+    .arbeit {
+        width: 9rem;
+        height: 16rem;
+        background-color: rgb(255, 255, 255);
+        display: inline;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 250ms ease;
+        margin: auto;
+        
+        }
+        
+        .arbeit:hover {
+            box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+            transform: translate(0, -1rem);
+        }  
+    
